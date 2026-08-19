@@ -3,19 +3,19 @@ from typing import List
 id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = os.environ.get("API_ID", "32541562")
+    API_HASH = os.environ.get("API_HASH", "e37e4432298d5a5eb4a6e32c18804283")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8333565963:AAGVAf8wPMVRM1imA8R3v7xIxmw6Ts6gXmI")
     DATABASE_NAME = os.environ.get("DATABASE_NAME","techifybots")     
     DATABASE_URL = os.environ.get("DATABASE_URL","")
     PICS = (os.environ.get("PICS", "https://i.ibb.co/MDssddJp/pic.jpg https://i.ibb.co/n8fQ2xcx/pic.jpg")).split()
-    ADMIN = int(os.environ.get("ADMIN", ""))
+    ADMIN = int(os.environ.get("ADMIN", "7006602588"))
     IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
     AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNELS", "").split())) # Add Multiple channel ids
     AUTH_REQ_CHANNELS = list(map(int, os.environ.get("AUTH_REQ_CHANNELS", "").split())) # Add Multiple channel ids
     FSUB_EXPIRE = int(os.environ.get("FSUB_EXPIRE", 2))  # minutes, 0 = no expiry
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", ""))     
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002521835919"))
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1003047918112"))     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
     BOT_UPTIME = time.time()
 
