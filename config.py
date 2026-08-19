@@ -3,10 +3,6 @@ from typing import List
 id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
-    # --- ADDED FOR RENDER ---
-    PORT = int(os.environ.get("PORT", "8080"))
-    # ------------------------
-    
     API_ID = os.environ.get("API_ID", "32541562")
     API_HASH = os.environ.get("API_HASH", "e37e4432298d5a5eb4a6e32c18804283")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8333565963:AAGVAf8wPMVRM1imA8R3v7xIxmw6Ts6gXmI")
